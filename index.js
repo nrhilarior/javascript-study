@@ -4,13 +4,21 @@ let myName = 'Jesse Pinkman'; {
 const age = 25; {
     console.log(age);
 }// Age 
-const roots = ['Angelina Jollie', 'William Wonka', myName]; {
+const roots = ['Diane Pinkman', 'Adam Pinkman', myName]; {
     console.log(roots);
 }// Familly Base
-const myFamilly = ['Michael Ross', 'Rachel Zane', myName]; {
+const myFamilly = ['Walter White', 'Skyler White', myName]; {
     console.log(myFamilly);
 }// Familly
 
-console.log(-----------------------------------);
+console.log('-----------------------------------');
 
-let ope = 15 * 2 / 2
+let ope = 15 * 2 / 2 - 5 + 5; {
+    console.log(ope);
+}// Operações básicas no Js
+
+if (age >= 18) {
+  console.log("Você pode dirigir! 🚗");
+} else {
+  console.log("Você ainda não pode dirigir! 🚫");
+}
