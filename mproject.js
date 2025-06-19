@@ -1,51 +1,38 @@
-let continuar = true;
+let opcao;
 
-while (continuar) {
-  let opcao = prompt(`Escolha uma operação:
-  1 - Soma
-  2 - Subtração
-  3 - Multiplicação
-  4 - Divisão
-  5 - Sair`);
-
-  let num1, num2, resultado;
+while (opcao !== "4") {
+  opcao = prompt(`Escolha uma opção:
+  1 - Contar de 1 a 5 (for)
+  2 - Contar de 5 a 1 (while)
+  3 - Verificar par ou ímpar (if/else)
+  4 - Sair`);
 
   switch (opcao) {
     case "1":
-      num1 = Number(prompt("Digite o primeiro número:"));
-      num2 = Number(prompt("Digite o segundo número:"));
-      resultado = num1 + num2;
-      console.log("Resultado da soma: " + resultado);
-      break;
-
-    case "2":
-    num1 = Number(prompt("Digite o primeiro número:"));
-      num2 = Number(prompt("Digite o segundo número:"));
-      resultado = num1 + num2;
-      console.log("Resultado da soma: " + resultado);
-      break;
-
-    case "3":
-      num1 = Number(prompt("Digite o primeiro número:"));
-      num2 = Number(prompt("Digite o segundo número:"));
-      resultado = num1 + num2;
-      console.log("Resultado da soma: " + resultado);
-      break;
-
-    case "4":
-      num1 = Number(prompt("Digite o primeiro número:"));
-      num2 = Number(prompt("Digite o segundo número:"));
-      if (num2 === 0) {
-        console.log("Erro: divisão por zero!");
-      } else {
-        resultado = num1 / num2;
-        console.log("Resultado da divisão: " + resultado);
+      for (let i = 1; i <= 5; i++) {
+        console.log(i);
       }
       break;
 
-    case "5":
-      continuar = false;
-      console.log("Saindo...");
+    case "2":
+      let i = 5;
+      while (i >= 1) {
+        console.log(i);
+        i--;
+      }
+      break;
+
+    case "3":
+      let numero = Number(prompt("Digite um número:"));
+      if (numero % 2 === 0) {
+        console.log("É par");
+      } else {
+        console.log("É ímpar");
+      }
+      break;
+
+    case "4":
+      console.log("Encerrando...");
       break;
 
     default:
